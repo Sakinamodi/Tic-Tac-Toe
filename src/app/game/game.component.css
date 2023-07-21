@@ -1,0 +1,53 @@
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.board div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100px;
+    background-color: hotpink;
+    font-size: 48px;
+    cursor:grabbing;
+}
+button{
+    font-size:18px;
+    padding: 10px 20px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+h1{
+    margin-left:60px;
+}
+button{
+    background-color: deeppink;
+    /* padding:10px 50px 10px 50px; */
+    margin-left:10px;
+}
+.one{
+    font-size:50px;
+    font-style: italic;
+}
+.three{
+    font-size: 50px;
+    font-style: italic;
+}
+.four{
+    margin-left:550px;
+    font-size: 50px;
+    font-style: italic;
+}
+.five{
+    margin-left:400px;
+    font-size: 50px;
+    font-style: italic;
+}

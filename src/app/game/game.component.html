@@ -1,0 +1,27 @@
+<div class="main">
+      <div class="one">
+            <i>O wins: {{this.countO}}
+        </i>
+    </div>
+    
+    <div class="two">
+        <h1><i>Tic Tac Toe</i></h1>
+        <div class="board  ">
+            <div *ngFor="let cell of cells;let i=index" (click)="makeMove(i)">
+                {{cell}}
+            </div>
+        </div>
+    <button (click)="reset()"><i>Clear</i></button>
+    <button (click)="resetAll()"><i>Reset All</i></button>
+    </div>
+
+    <div class="three">
+        X wins:{{this.countX}}<br>
+    </div>
+</div>
+    <div class="four">
+        <i>Winner: {{this.winner}} </i><br>
+    </div>
+    <div class="five">
+        <i>Total matches played:{{this.count}}</i>
+    </div>
